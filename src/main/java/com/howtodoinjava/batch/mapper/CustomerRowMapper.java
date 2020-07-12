@@ -13,6 +13,6 @@ public class CustomerRowMapper implements RowMapper<Customer> {
 					rs.getLong("id"),
 					rs.getString("firstName"),
 					rs.getString("lastName"),
-					rs.getString("birthdate") );
+					rs.getDate("birthdate") );
 	}
 }

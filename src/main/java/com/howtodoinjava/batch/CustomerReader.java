@@ -66,7 +66,7 @@ public class CustomerReader implements ItemReader<Customer>, ItemStream {
             Customer obj = new Customer(Long.valueOf(id),
                     row.get("firstname").toString(),
                     row.get("lastname").toString(),
-                    row.get("birthdate").toString());
+                    (Date) row.get("birthdate"));
 
             listData.add(obj);
         }

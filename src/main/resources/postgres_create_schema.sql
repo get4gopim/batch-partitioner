@@ -1,24 +1,15 @@
 CREATE TABLE emp.customer (
 id serial PRIMARY KEY,
-	
 firstName VARCHAR(255) NULL,
-	
 lastName VARCHAR(255) NULL,
-	
-birthdate VARCHAR(255) NULL
+birthdate date not null
 );
 
-
-
 CREATE TABLE emp.new_customer (
-	
 id serial PRIMARY KEY,
-	
 firstName VARCHAR(255) NULL,
-	
 lastName VARCHAR(255) NULL,
-	
-birthdate VARCHAR(255) NULL
+birthdate date not null
 );
 
 INSERT INTO emp.customer VALUES 
